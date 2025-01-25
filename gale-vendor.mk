@@ -548,6 +548,8 @@ PRODUCT_PACKAGES += \
     libdpframework \
     libmtk_drvb \
     libpq_prot \
+    vendor.mediatek.hardware.audio@6.1 \
+    vendor.mediatek.hardware.audio@7.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.mmagent@1.0 \
@@ -628,10 +630,9 @@ PRODUCT_PACKAGES += \
     libvpu5 \
     libvpud_vcodec \
     libvt_custom \
-    vendor.mediatek.hardware.audio@7.1 \
     vendor.mediatek.hardware.rcs@2.0 \
     7816-3-T1 \
-    com.fingerprints.extension@1.0 \
+    com.fingerprints.extension@1.0_vendor \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \

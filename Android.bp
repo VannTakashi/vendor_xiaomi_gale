@@ -1286,6 +1286,48 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.audio@6.1",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.mediatek.hardware.audio@6.1.so"],
+			shared_libs: ["android.hardware.audio.common@6.0", "android.hardware.audio.effect@6.0", "android.hardware.audio@6.0", "android.hidl.safe_union@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.audio@6.1.so"],
+			shared_libs: ["android.hardware.audio.common@6.0", "android.hardware.audio.effect@6.0", "android.hardware.audio@6.0", "android.hidl.safe_union@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.mediatek.hardware.audio@7.1",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.mediatek.hardware.audio@7.1.so"],
+			shared_libs: ["android.hardware.audio.common@7.0", "android.hardware.audio.effect@7.0", "android.hardware.audio@7.0", "android.hidl.safe_union@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.audio@7.1.so"],
+			shared_libs: ["android.hardware.audio.common@7.0", "android.hardware.audio.effect@7.0", "android.hardware.audio@7.0", "android.hidl.safe_union@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vendor.mediatek.hardware.bluetooth.audio@2.1",
 	owner: "xiaomi",
 	strip: {
@@ -2771,23 +2813,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.audio@7.1",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.mediatek.hardware.audio@7.1.so"],
-			shared_libs: ["android.hardware.audio.common@7.0", "android.hardware.audio.effect@7.0", "android.hardware.audio@7.0", "android.hidl.safe_union@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.mediatek.hardware.rcs@2.0",
 	owner: "xiaomi",
 	strip: {
@@ -2822,7 +2847,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "com.fingerprints.extension@1.0",
+	name: "com.fingerprints.extension@1.0_vendor",
+	stem: "com.fingerprints.extension@1.0",
 	owner: "xiaomi",
 	strip: {
 		none: true,
