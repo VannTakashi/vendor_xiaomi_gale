@@ -443,6 +443,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/gale/proprietary/vendor/firmware/lib3a.ccu:$(TARGET_COPY_OUT_VENDOR)/firmware/lib3a.ccu \
     vendor/xiaomi/gale/proprietary/vendor/firmware/mt6631_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6631_fm_v1_coeff.bin \
     vendor/xiaomi/gale/proprietary/vendor/firmware/mt6631_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6631_fm_v1_patch.bin \
+    vendor/xiaomi/gale/proprietary/vendor/firmware/omnivision_hdl_firmware.img:$(TARGET_COPY_OUT_VENDOR)/firmware/omnivision_hdl_firmware.img \
     vendor/xiaomi/gale/proprietary/vendor/firmware/ovt_tcm_cap_limits.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/ovt_tcm_cap_limits.csv \
     vendor/xiaomi/gale/proprietary/vendor/firmware/remoteproc_scp:$(TARGET_COPY_OUT_VENDOR)/firmware/remoteproc_scp \
     vendor/xiaomi/gale/proprietary/vendor/firmware/soc1_0_patch_mcu_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_patch_mcu_1a_1_hdr.bin \
